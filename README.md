@@ -1,2 +1,2 @@
 # Vacation-Timer
-link web-site: https://maksimlutsenko.github.io/Vacation-Timer/
+link web-site: https://felinedev.github.io/Vacation-Timer/
