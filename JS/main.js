@@ -1,4 +1,4 @@
-let date = new Date('June 1 2022 00:00:00'); //дата конечного события
+let date = new Date('June 1 2023 00:00:00'); //дата конечного события
 
 function counts() {
 	let now = new Date();
