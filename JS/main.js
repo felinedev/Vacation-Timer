@@ -1,9 +1,17 @@
-let date = new Date('June 1 2023 00:00:00'); //дата конечного события
+const thisYear = new Date().getFullYear();
+const startSummer = new Date(`June 1 ${thisYear} 00:00:00`);
+const endSummer = new Date(`31 Aug ${thisYear} 23:59:59`);
 
 function counts() {
 	let now = new Date();
-	gap = date - now;
-	console.log(gap);
+
+	if(!(startSummer >= now || now >= endSummer)){
+		const root =document.getElementById('countdown');
+		const messege = "<h1>Summer has come</h1>";
+		return root.innerHTML = messege;
+	}
+
+	gap = startSummer - now;
 	setInterval(counts, 1000);
 
 	let days = Math.floor(gap / 1000 / 60 / 60 / 24);

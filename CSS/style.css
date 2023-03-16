@@ -1,15 +1,22 @@
 body{
+	color: #FFFF;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #537173;
+	background: #40E0D0;
+	background: -webkit-linear-gradient(to left, #FF0080, #FF8C00, #40E0D0);
+	background: linear-gradient(to left, #FF0080, #FF8C00, #40E0D0);
+
 }
 .cart{
 	width: 60vw;
 	padding: 10px;
 	margin-top: 22vh;
-	background-color: #8F9B97;
+	background: #f12711;
+	background: -webkit-linear-gradient(to left, #f12711, #f5af19);
+	background: linear-gradient(to left, #f12711, #f5af19);
+
 	border: 2px solid #E5E5E5;
 	border-radius: 10px;
 }
@@ -18,9 +25,16 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-h3{
-	margin: 0;
+@keyframes colorText {
+	25%{color: #C88FFE;}
+	50%{color: yellow;}
+	75%{color: #6DFD5E;}
 }
+.countdown h1{
+	font-size: 1.5em;
+	animation: colorText 2s infinite;
+}
+h3{margin: 0;}
 .time-section{
 	display: flex;
 	flex-direction: column;
@@ -31,9 +45,7 @@ h3{
 	border-right: 2px solid #E5E5E5;
 	user-select: none;
 }
-.time-section:last-child{
-	border: none;
-}
+.time-section:last-child{border: none;}
 
 /** style text*/
 h1{
